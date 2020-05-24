@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Carousel</title>
+    <link rel="stylesheet" href="./src/css/style.css">
+</head>
+
+<body>
+    <!-- Main Carousel Container-->
+    <div class="mainContainer">
+
+        <div class="slides fade">
+            <img src="./src/images/sliderOne.jpg" class="responsive-img" style="width:100%">
+            <div class="text">
+                <p>Chicago Image 1</p>
+                <span>Thank you, Chicago!</span>
+            </div>
+        </div>
+
+        <div class="slides fade">
+            <img src="./src/images/sliderTwo.jpg" class="responsive-img" style="width:100%;">
+            <div class="text">
+                <p>Chicago Image 2</p>
+                <span>Thank you, Chicago!</span>
+            </div>
+        </div>
+
+        <div class="slides fade">
+            <img src="./src/images/SliderThree.jpg" class="responsive-img" style="width:100%">
+            <div class="text">
+                <div class="text">
+                    <p>Chicago Image 3</p>
+                    <span>Thank you, Chicago!</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Left  and Right Arrows-->
+        <a class="prev" onclick="prevSlides(-1)">&#10094;</a>
+        <a class="next" onclick="prevSlides(1)">&#10095;</a>
+
+        <!-- Dots to Control Slides-->
+        <div style="text-align:center" class="dotController">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+    </div>
+    <br>
+    <script src="./src/js/main.js"></script>
+</body>
+
+</html>
